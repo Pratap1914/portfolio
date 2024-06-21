@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap");
+
+$blue: #2962ff;
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+}
+
+body {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 16px;
+    background-color: rgb(10, 9, 9); 
+   
+}
+section img{
+    width: 300px;
+    height: 200px;
+    margin-left: -73px;
+}
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 2em;
+        /* background: #212121; */
+        color: #fff;
+        text-transform: uppercase;
+        gap: 30px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        text-decoration: underline;
+        @media (max-width: 768px) {
+            font-size: 1.3em;
+        }
+    }
+    
+    .text-shadow {
+        font-style: italic;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke:hwb(52 12% 9%);
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 2px 2px 10px $blue;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        letter-spacing: 0.2em;
+        animation: flicker 0.5s ease-in-out infinite alternate;
+    
+        &:hover {
+            color: #fff;
+        }
+    }
+    
+    .tags small {
+        @media (max-width: 768px) {
+            font-size: 0.5em;
+        }
+    }
+    
+    @keyframes flicker {
+        0% {
+            opacity: 0.5;
+            text-shadow: 2px 2px 10px $blue;
+        }
+        100% {
+            opacity: 1;
+            text-shadow: 2px 2px 20px $blue;
+        }
+    }
+    .notification iframe{
+        margin: 10px 0 20px 0;
+       height:500px;
+       width: 900px;
+    }
+    
+
+ 
+
+
+
+
+
+
+
+
+.download-box {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin-top: 30px;
+    height: 40px;
+    padding: 10px;
+    color: #eaeff3;
+    width: 300px;
+border-radius: 10px;
+    display: flex;
+font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    background:  #0c0c0c;
+    transition: 0.5s;
+}
+
+.box:hover {
+    background: rgb(52, 58, 58);
+    cursor: pointer;
+    color: #00fffc;
+}
+
+.second-image {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second-image img {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.second-image p {
+    margin-right: 390px;
+    font-size: large;
+}
+
+.english {
+    margin: 25px;
+    height: 200px;
+    width: 285px;
+    border: 5px solid rgb(50, 236, 246);
+    text-align: center;
+    background: rgb(16, 11, 11);
+    border-radius: 10px;
+}
+
+.english h2 {
+    margin-top: 12px;
+    color: #fff;
+}
+
+.english button {
+    margin-top: 60px;
+    /* background: gray; */
+}
+.english button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.english .btn1 {
+    background: rgb(50, 236, 246);
+    padding: 2px;
+    color: #fff;
+    border: rgb(50, 236, 246);
+    border-radius: 5px;
+    font-weight: 700;
+    height: 50px;
+    width: 120px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+}
+
+.english .btn2 {
+    background: rgb(43, 240, 102);
+    padding: 2px;
+    color: #fff;
+    border: rgb(43, 240, 102);
+    border-radius: 5px;
+    font-weight: 700;
+    height: 50px;
+    width: 120px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+}
+.btn1::before {
+content:"";
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background: linear-gradient(120deg, transparent, #00fffc,transparent);
+transform: translateX(-100%);
+transition: 0.6s;
+position:absolute;
+
+}
+.btn1:hover{
+    background: transparent;
+    box-shadow: 0 0 20px 5px #00fffc;
+}
+.btn2::before {
+    content:"";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00fffc,transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position:absolute;
+    
+    }
+    .btn2:hover{
+        background: transparent;
+        box-shadow: 0 0 20px 5px rgb(43, 240, 102);
+    }
+    
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 344px;
+    grid-template-rows: 100px 100px 100px;
+    column-gap: 200px;
+    row-gap: 180px;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 110px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+
+
+
+/* contact us*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  
+  .container1 {
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  div .h4{
+    margin-top: 12px;
+    margin-right: 500px;
+
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    section img {
+        width: 200px; /* Adjust image width for smaller screens */
+        height: 150px; /* Adjust image height for smaller screens */
+        margin-left: -50px; /* Adjust image margin for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Adjust heading font size for smaller screens */
+    }
+
+    .tags small {
+        font-size: 0.8em; /* Adjust tag font size for smaller screens */
+    }
+
+    .notification iframe {
+        width: 100%; /* Adjust iframe width for smaller screens */
+    }
+
+    .container {
+        grid-template-columns: 150px 150px 244px; /* Adjust grid columns for smaller screens */
+        row-gap: 100px; /* Adjust row gap for smaller screens */
+    }
+
+    /* Add more styles for smaller screens as needed */
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    /* Add styles specific to screens smaller than 480px */
+}
+  
+
+  
+
+
+
+
+
+
+
+
+
+
